@@ -3,7 +3,6 @@
 <xsd:schema elementFormDefault="qualified"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
 			xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0"
 			xmlns:edci="http://data.europa.eu/europass/model/credentials#"
 			targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0">
@@ -46,7 +45,7 @@
 							<xsd:documentation>Mode of study, (full time, part time, distance learning)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="monthsOfEducation" type="udt:NumericType" minOccurs="1" maxOccurs="1">
+					<xsd:element name="durationOfEducation" type="xsd:duration" minOccurs="1" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>Official duration of education in months</xsd:documentation>
 						</xsd:annotation>
