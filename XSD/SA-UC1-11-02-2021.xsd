@@ -4,9 +4,9 @@
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
-			xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::StudyingAbroad:v1.0"
+			xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0"
 			xmlns:edci="http://data.europa.eu/europass/model/credentials#"
-			targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::StudyingAbroad:v1.0">
+			targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0">
 	<xsd:import namespace="http://data.europa.eu/europass/model/credentials#" schemaLocation="edci_credentialTypes.xsd"/>
 	<xsd:import namespace="http://www.w3.org/ns/corevocabulary/BasicComponents" schemaLocation="CoreVocabularyBasicComponents-v1.00.xsd"/>
 	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemaLocation="common/UBL-CommonBasicComponents-2.0.xsd"/>
