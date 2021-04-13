@@ -36,12 +36,12 @@
 							<xsd:documentation>Name of a study programme that the student finished at the higher education institution in order to obtain the degree</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="mainFieldOfStudy" type="edci:IscedFOetCodeEnumType" minOccurs="1" maxOccurs="1">
+					<xsd:element name="mainFieldOfStudy" type="edci:IscedFOetCodeType" minOccurs="1" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>Field of finished higher education</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="modeOfStudy" type="sa:ModeOfStudy" minOccurs="1" maxOccurs="1">
+					<xsd:element name="modeOfStudy" type="edci:LearningScheduleTypeEnumType" minOccurs="1" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>Mode of study, (full time, part time, distance learning)</xsd:documentation>
 						</xsd:annotation>
@@ -51,7 +51,7 @@
 							<xsd:documentation>Official duration of education in months</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="scope" type="udt:NumericType" minOccurs="1" maxOccurs="1">
+					<xsd:element name="scope" type="edci:ECTSCreditPointsType" minOccurs="1" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>The official workload of the study programme in the ECTS (European Credit Transfer and Accumulation System) credit points</xsd:documentation>
 						</xsd:annotation>
@@ -61,7 +61,7 @@
 							<xsd:documentation>Date of issue of the certificate or diploma</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="placeOfIssue" type="edci:TextType" minOccurs="1" maxOccurs="unbounded">
+					<xsd:element name="placeOfIssue" type="edci:LocationType" minOccurs="1" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:documentation>Place of issue (location) of the certificate or diploma</xsd:documentation>
 						</xsd:annotation>
@@ -71,12 +71,13 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-<!--	<xsd:complexType name="achievedType">
+	<!--
+	<xsd:complexType name="achievedType">
 		<xsd:sequence>
 			<xsd:element name="achievement" type="HigherEducationEvidenceType"/>
 		</xsd:sequence>
-	</xsd:complexType>-->
-<!--	<xsd:complexType name="SAPersonType">
+	</xsd:complexType>
+	<xsd:complexType name="SAPersonType">
 		<xsd:complexContent>
 			<xsd:extension base="edci:PersonType">
 				<xsd:sequence>
@@ -84,7 +85,8 @@
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
-	</xsd:complexType>-->
+	</xsd:complexType>
+	-->
 	<xsd:simpleType name="ModeOfStudy">
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="distance learning"/>
