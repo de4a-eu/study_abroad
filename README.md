@@ -1,2 +1,2 @@
 # study_abroad
-Repository for canonical evidences of the DE4A Study Abroad pilot
+Repository for the canonical evidences of the DE4A Study Abroad pilot
