@@ -66,10 +66,15 @@
 					</xsd:element>
 					<xsd:element name="scope" type="edci:ECTSCreditPointsType" minOccurs="1" maxOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>The official workload of the study programme in the ECTS (European Credit Transfer and Accumulation System) credit points</xsd:documentation>
+							<xsd:documentation>The official workload of the study programme in ECTS (European Credit Transfer and Accumulation System) credit points</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="averageGrade" type="edci:TextScoreType" minOccurs="1" maxOccurs="1">
+					<xsd:element name="averageGrade" type="edci:TextScoreType" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:documentation>The average grade awarded</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="grade_v2" type="sa:gradeType" minOccurs="0" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>The average grade awarded</xsd:documentation>
 						</xsd:annotation>
@@ -78,6 +83,23 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+
+	<xsd:complexType name="gradeType">
+		<xsd:complexContent>
+			<xsd:extension base="edci:TextScoreType">
+				<xsd:attribute name="explanation" type="xsd:normalizedString">
+					<xsd:annotation>
+						<xsd:documentation>Short textual explanation.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<!--INESC: the scheme looks good. However, we prefer a clear structure of
+	the grade element with indication of the value, the grading scale and
+	a short textual explanation.-->
+
 	<!--
 	<xsd:complexType name="achievedType">
 		<xsd:sequence>
