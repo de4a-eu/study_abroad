@@ -3,7 +3,7 @@
         xmlns:edci="http://data.europa.eu/europass/model/credentials#"
         xmlns:sauc2="urn:eu-de4a:xsd:CanonicalEvidenceType::LargeFamilyEvidence:v1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::LargeFamilyEvidence:v1.0  SA-UC2-LargeFamilyEvidenceType.xsd">
+        xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::LargeFamilyEvidence:v1.0  SA-UC2-LargeFamilyEvidenceType-12-05-2022.xsd">
     <sauc2:beneficiary id="http://tempuri.org">
         <edci:nationalId spatialID="http://publications.europa.eu/resource/authority/country/SVN">0</edci:nationalId>
         <edci:givenNames>

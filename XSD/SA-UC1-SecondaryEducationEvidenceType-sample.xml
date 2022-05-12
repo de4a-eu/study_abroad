@@ -3,7 +3,7 @@
                            xmlns:edci="http://data.europa.eu/europass/model/credentials#"
                            xmlns:sauc1="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                           xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0 SA-UC1-SecondaryEducationEvidenceType.xsd">
+                           xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0 SA-UC1-SecondaryEducationEvidenceType-12-05-2022.xsd">
 
     <edci:title>
         <edci:text lang="en" content-type="text/plain">
@@ -13,9 +13,6 @@
     <sauc1:country>
         http://publications.europa.eu/resource/authority/country/GBR
     </sauc1:country>
-    <sauc1:degree lang="en" content-type="text/plain">
-        General upper secondary education
-    </sauc1:degree>
     <sauc1:nameOfSchool lang="en" content-type="text/plain">
         DE4A Secondary School
     </sauc1:nameOfSchool>
