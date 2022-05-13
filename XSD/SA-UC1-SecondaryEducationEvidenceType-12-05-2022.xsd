@@ -20,11 +20,11 @@
                             <xsd:documentation>Country of completed secondary education</xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <!--<xsd:element name="degree" type="edci:TextType" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:element name="degree" type="edci:TextType" minOccurs="0" maxOccurs="unbounded">
                         <xsd:annotation>
                             <xsd:documentation>Degree previously obtained (e.g. General upper secondary education)</xsd:documentation>
                         </xsd:annotation>
-                    </xsd:element>-->
+                    </xsd:element>
                     <xsd:element name="nameOfSchool" type="edci:TextType" minOccurs="1" maxOccurs="unbounded">
                         <xsd:annotation>
                             <xsd:documentation>Name of a secondary school that the person finished</xsd:documentation>
@@ -35,7 +35,7 @@
                             <xsd:documentation>Name of a secondary school programme that a person successfully finished (e.g. General secondary programme)</xsd:documentation>
                         </xsd:annotation>
                     </xsd:element>
-                    <xsd:element name="grade" type="sauc1:gradeType" minOccurs="1" maxOccurs="1">
+                    <xsd:element name="grade" type="sauc1:gradeType" minOccurs="0" maxOccurs="1">
                         <xsd:annotation>
                             <xsd:documentation>Mark indicating a degree of accomplishment</xsd:documentation>
                         </xsd:annotation>
