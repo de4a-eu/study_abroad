@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0" xmlns:eup="http://data.europa.eu/europass/model/credentials#" xmlns:ns1="http://www.w3.org/ns/corevocabulary/BasicComponents" xmlns:ns2="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0" elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0" xmlns:eup="http://data.europa.eu/europass/model/credentials#" xmlns:ns2="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0" elementFormDefault="qualified">
 	<xsd:import namespace="http://data.europa.eu/europass/model/credentials#" schemaLocation="edci_credentialTypes.xsd"/>
-	<xsd:import namespace="http://www.w3.org/ns/corevocabulary/BasicComponents" schemaLocation="CoreVocabularyBasicComponents-v1.00.xsd"/>
 	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemaLocation="common/UBL-CommonBasicComponents-2.0.xsd"/>
 	<xsd:import namespace="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" schemaLocation="common/UnqualifiedDataTypeSchemaModule-2.0.xsd"/>
 	<xsd:element name="HigherEducationDiploma" type="sa:HigherEducationDiplomaType"/>
