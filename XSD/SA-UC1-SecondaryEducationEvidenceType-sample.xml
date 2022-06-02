@@ -3,7 +3,7 @@
                            xmlns:edci="http://data.europa.eu/europass/model/credentials#"
                            xmlns:sauc1="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                           xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0 SA-UC1-SecondaryEducationEvidenceType-12-05-2022.xsd">
+                           xsi:schemaLocation="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0 SA-UC1-SecondaryEducationEvidenceType.xsd">
 
     <edci:title>
         <edci:text lang="en" content-type="text/plain">
