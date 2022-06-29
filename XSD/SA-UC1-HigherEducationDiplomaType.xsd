@@ -9,9 +9,6 @@
 	<xsd:import namespace="http://data.europa.eu/europass/model/credentials#" 
 				schemaLocation="edci_credentialTypes.xsd"
 				/>
-	<xsd:import namespace="http://www.w3.org/ns/corevocabulary/BasicComponents" 
-				schemaLocation="CoreVocabularyBasicComponents-v1.00.xsd"
-				/>
 	<xsd:element name="HigherEducationDiploma" type="sa:HigherEducationDiplomaType"/>
 	<xsd:complexType name="HigherEducationDiplomaType">
 		<xsd:complexContent>
