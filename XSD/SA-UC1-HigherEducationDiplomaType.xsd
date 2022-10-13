@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema 
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0"
+		xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v2.0"
 		xmlns:eup="http://data.europa.eu/europass/model/credentials#"
-		targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v1.0"
+		targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v2.0"
 		elementFormDefault="qualified"
 	>
 	<xsd:import namespace="http://data.europa.eu/europass/model/credentials#" 
@@ -69,20 +69,16 @@
 							<xsd:documentation>Person that has obtained the academic title or degree</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					
-					
 					<xsd:element name="averageGrade" type="sa:gradeType" minOccurs="0" maxOccurs="1">
 						<xsd:annotation>
 							<xsd:documentation>The average grade awarded</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	
-	
+
 	<xsd:complexType name="gradeType">
 		<xsd:simpleContent>
 			<xsd:extension base="eup:TextScoreType">
