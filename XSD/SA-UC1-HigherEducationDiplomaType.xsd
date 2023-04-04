@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2023, Partners of the EU funded DE4A project consortium
+  (https://www.de4a.eu/consortium), under Grant Agreement No.870635
+Author: Stockholm University (DE4A Partner Organisation)
+Licensed under the CC-BY-4.0 license.
+-->
 <xsd:schema 
 		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 		xmlns:sa="urn:eu-de4a:xsd:CanonicalEvidenceType::HigherEducationEvidence:v2.0"
