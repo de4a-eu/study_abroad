@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2023, Partners of the EU funded DE4A project consortium
+  (https://www.de4a.eu/consortium), under Grant Agreement No.870635
+Author: Stockholm University (DE4A Partner Organisation)
+Licensed under the CC-BY-4.0 license.
+-->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:sauc1="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0" xmlns:eup="http://data.europa.eu/europass/model/credentials#" targetNamespace="urn:eu-de4a:xsd:CanonicalEvidenceType::SecondaryEducationEvidence:v1.0" elementFormDefault="qualified">
 	<xsd:import namespace="http://data.europa.eu/europass/model/credentials#" schemaLocation="edci_credentialTypes.xsd"/>
 	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemaLocation="common/UBL-CommonBasicComponents-2.0.xsd"/>
