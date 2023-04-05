@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2023, Partners of the EU funded DE4A project consortium (https://www.de4a.eu/consortium), under Grant Agreement No.870635
+Author: Stockholm University (SU)
+Licensed under the CC-BY-4.0 license -->
+
 <sauc2:LargeFamily
         xmlns:edci="http://data.europa.eu/europass/model/credentials#"
         xmlns:sauc2="urn:eu-de4a:xsd:CanonicalEvidenceType::LargeFamilyEvidence:v1.0"
