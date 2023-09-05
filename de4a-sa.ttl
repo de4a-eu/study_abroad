@@ -1,0 +1,160 @@
+@prefix : <http://www.de4a.eu/ontologies/sa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix de4a-sa: <http://www.de4a.eu/ontologies/sa#> .
+@base <http://www.de4a.eu/ontologies/sa> .
+
+<http://www.de4a.eu/ontologies/sa> rdf:type owl:Ontology ;
+                                    owl:imports <http://data.europa.eu/snb/model/elm> ;
+                                    <http://purl.org/dc/elements/1.1/title> "DE4A Study Abroad Ontology"@en ;
+                                    <http://purl.org/dc/terms/created> "2023-24-07"^^xsd:date ;
+                                    rdfs:seeAlso <https://github.com/de4a-eu/study_abroad> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.de4a.eu/ontologies/sa#averageGrade
+de4a-sa:averageGrade rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/gradeStatus> ;
+                     rdfs:domain de4a-sa:HigherEducationDiploma ;
+                     rdfs:range de4a-sa:AverageGrade ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Average grade awarded for the diploma."@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "average grade"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#country
+de4a-sa:country rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/countryCode> ;
+                rdfs:domain de4a-sa:HigherEducationDiploma ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The country where the study programme was completed by the student."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "country"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#holderOfAchievement
+de4a-sa:holderOfAchievement rdf:type owl:ObjectProperty ;
+                            rdfs:domain de4a-sa:HigherEducationDiploma ;
+                            rdfs:range <http://www.w3.org/ns/person#Person> ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "The person that has obtained the academic title or degree."@en ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "holder of achievement"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#mainFieldOfStudy
+de4a-sa:mainFieldOfStudy rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/ISCEDFCode> ;
+                         rdfs:domain de4a-sa:HigherEducationDiploma ;
+                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "The field of finished higher education."@en ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "main field of study"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#modeOfStudy
+de4a-sa:modeOfStudy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/learningSchedule> ;
+                    rdfs:domain de4a-sa:HigherEducationDiploma ;
+                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Specifies whether the specific diploma was acquired via full-time, part-time studying, etc."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "mode of study"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#placeOfIssue
+de4a-sa:placeOfIssue rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/location> ;
+                     rdfs:domain de4a-sa:HigherEducationDiploma ;
+                     rdfs:range <http://purl.org/dc/terms/Location> ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "The place of issue (location) of the certificate or diploma."@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "place of issue"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#scope
+de4a-sa:scope rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/creditPoint> ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Refers to the official workload of the study programme in the ECTS (European Credit Transfer and Accumulation System) credit points."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "scope"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.de4a.eu/ontologies/sa#dateOfIssue
+de4a-sa:dateOfIssue rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/awardingDate> ;
+                    rdfs:domain de4a-sa:HigherEducationDiploma ;
+                    rdfs:range xsd:date ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "The issuing date of the certificate or diploma."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "date of issue"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#degree
+de4a-sa:degree rdf:type owl:DatatypeProperty ;
+               rdfs:domain de4a-sa:HigherEducationDiploma ;
+               rdfs:range xsd:string ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Academic title or degree obtained by the student and proven by this evidence."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "degree"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#durationOfEducation
+de4a-sa:durationOfEducation rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf <http://data.europa.eu/snb/model/elm/duration> ;
+                            rdfs:domain de4a-sa:HigherEducationDiploma ;
+                            rdfs:range xsd:duration ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "The official duration of education needed for obtaining the specific diploma."@en ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "duration of education"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#explanation
+de4a-sa:explanation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain de4a-sa:AverageGrade ;
+                    rdfs:range xsd:normalizedString ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Short textual explanation of the grade and its scheme."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "explanation"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#institutionName
+de4a-sa:institutionName rdf:type owl:DatatypeProperty ;
+                        rdfs:domain de4a-sa:HigherEducationDiploma ;
+                        rdfs:range xsd:string ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "The name of the higher education institution where the student obtained the degree."@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "institution name"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#studyProgramme
+de4a-sa:studyProgramme rdf:type owl:DatatypeProperty ;
+                       rdfs:domain de4a-sa:HigherEducationDiploma ;
+                       rdfs:range xsd:string ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "The name of a study programme that the student finished at the higher education institution in order to obtain the degree."@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "study programme"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.de4a.eu/ontologies/sa#AverageGrade
+de4a-sa:AverageGrade rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Average grade awarded for a diploma / learning achievement."@en ;
+                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Average Grade"@en .
+
+
+###  http://www.de4a.eu/ontologies/sa#HigherEducationDiploma
+de4a-sa:HigherEducationDiploma rdf:type owl:Class ;
+                               rdfs:subClassOf <http://data.europa.eu/snb/model/elm/LearningAchievement> ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "Represents an academic qualification obtained by a student upon completing a higher education study program at a recognized institution."@en ;
+                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Higher Education Diploma"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
